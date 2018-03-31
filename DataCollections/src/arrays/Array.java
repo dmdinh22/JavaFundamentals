@@ -11,6 +11,7 @@ public class Array {
 			sum += rainfall[i];
 		}
 		double avgRainFall = sum / rainfall.length;
-		System.out.println("Average rain fall is " + avgRainFall);
+		System.out.println("Average rain fall is " + avgRainFall);                  
 	}
 }
+	
