@@ -10,7 +10,7 @@ public class Car {
 	boolean isNew;
 	double miles; // amt of miles the car has
 	String owner;
-	
+
 	// sell car to newOwner
 	public void sell(String newOwner) {
 		owner = newOwner;
@@ -18,7 +18,7 @@ public class Car {
 			isNew = false;
 		}
 	}
-	
+
 	// age checking method
 	public boolean isOld() {
 		int thisYear = Calendar.getInstance().get(Calendar.YEAR);
@@ -28,17 +28,17 @@ public class Car {
 			return false;
 		}
 	}
-}
 
-public static void main(String[] args) {
-	Car myCar = new Car();
-	myCar.make = "BMW";
-	myCar.model = "M3";
-	myCar.year = 2004;
-	myCar.miles = 100000;
-	myCar.isNew = false;
-	myCar.owner = "David";
-	boolean isMyCarOld = myCar.isOld();
-	myCar.sell("Bart Simpson");
-	System.out.println("Car owned by " + myCar.owner);
+	public static void main(String[] args) {
+		Car myCar = new Car();
+		myCar.make = "BMW";
+		myCar.model = "M3";
+		myCar.year = 2004;
+		myCar.miles = 100000;
+		myCar.isNew = false;
+		myCar.owner = "David";
+		boolean isMyCarOld = myCar.isOld();
+		myCar.sell("Bart Simpson");
+		System.out.println("Car owned by " + myCar.owner);
+	}
 }
