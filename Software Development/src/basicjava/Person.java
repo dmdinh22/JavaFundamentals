@@ -1,4 +1,4 @@
-package constructors;
+package basicjava;
 
 public class Person {
 	String name;

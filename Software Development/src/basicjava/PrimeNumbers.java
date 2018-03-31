@@ -1,4 +1,4 @@
-package primes;
+package basicjava;
 
 import java.util.*;
 

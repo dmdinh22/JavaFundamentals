@@ -1,4 +1,4 @@
-package arithmetic;
+package testing;
 
 public class Arithmetic {
 	int multiply(int x, int y) {

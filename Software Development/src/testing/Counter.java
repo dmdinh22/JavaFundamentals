@@ -1,4 +1,4 @@
-package counter;
+package testing;
 
 public class Counter {
 	int count = 0;
