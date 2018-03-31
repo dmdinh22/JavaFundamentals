@@ -13,7 +13,7 @@ public class UnitTest {
 	void testMax() {
 		int x = max(3, 7);
 		if (x != 7) {
-			SOPL("max(3, 7) gives " + x);
+			System.out.println("max(3, 7) gives " + x);
 		}
 	}
 
