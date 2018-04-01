@@ -8,6 +8,7 @@ public class Card {
 	
 	// creating a deck of cards
 	ArrayList<Card> deck = new ArrayList<Card>();
+	
 	suits = new char[] {'d', 's', 'c', 'h'};
 	for (int i = 1; i <= 13; i++ ) {
 		Card c = new Card();
