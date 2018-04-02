@@ -38,4 +38,8 @@ public class ParkingGarage {
 		carToBeParked.setParkingLoc(i);
 		return true;
 	}
+	
+	public static void main(String[] args) {
+		
+	}
 }
