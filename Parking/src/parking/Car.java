@@ -1,5 +1,7 @@
 package parking;
 
+
+
 public class Car {
 	// instance variables
 	private String ownerName;
@@ -38,23 +40,26 @@ public class Car {
 	public int getRegistrationNum() {
 		return registrationNum;
 	}
-
+	
+	// override base object's toString Method
 	@Override
 	public String toString() {
 		// return string representation of a car.
-		return ownerName + " owns car " + registrationNum;
+		return ownerName + " owns the car " + registrationNum;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
+		// casting Car object to a generic object
 		Car carObj = (Car) obj;
+		// returning a bool
 		return this.registrationNum == carObj.registrationNum;
 	}
 
 	public static void main(String[] args) {
-		Car c1 = new Car("abc", 123, 456);
+		Car c1 = new Car("Joe", 123, 456);
 		System.out.println(c1);
-		Car c2 = new Car("def", 123, 456);
+		Car c2 = new Car("Ron", 123, 456);
 		System.out.println(c1 == c2);
 		System.out.println(c1.equals(c2));
 	}
